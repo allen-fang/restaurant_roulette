@@ -84,7 +84,6 @@ class RestaurantViewController: UIViewController, MKMapViewDelegate, CLLocationM
                 if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary {
                     if let results = jsonResult["results"] as? NSArray {
                         let randomNum = Int(arc4random_uniform(UInt32(30)))
-                        print(randomNum)
                         let result = results[randomNum] as! NSDictionary
                         self.placeID = result["place_id"] as? String
                         RestaurantModel.getRestaurantWithID(id: self.placeID!, completionHandler: {
@@ -125,13 +124,11 @@ class RestaurantViewController: UIViewController, MKMapViewDelegate, CLLocationM
                                     self.priceLevelLabel.text = priceLabelText
                                     self.addressLabel.text = self.address!
                                     self.phoneButtonLabel.setTitle(self.phone, for: UIControlState.normal)
-                                    print(self.lat!)
-                                    print(self.long!)
                                     self.createRoute(restaurantCoordinate: CLLocationCoordinate2D(latitude: self.lat!, longitude: self.long!))
                                     self.overlay?.removeFromSuperview()
                                 }
                             } catch {
-                                print("something went wrong 2")
+                                print("something went wrong")
                             }
                         })
                     }
@@ -165,22 +162,10 @@ class RestaurantViewController: UIViewController, MKMapViewDelegate, CLLocationM
                     self.performSegue(withIdentifier: "unwindToMainSegue", sender: self)
                 }
             }
-            catch{}
         })
         
         
     }
-    
-//    // core data request
-//    func fetchAllItems() {
-//        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
-//        do {
-//            let result = try managedObjectContext.fetch(request)
-//            user = result as! User
-//        } catch {
-//            print("\(error)")
-//        }
-//    }
 
     
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
@@ -212,7 +197,7 @@ class RestaurantViewController: UIViewController, MKMapViewDelegate, CLLocationM
     
     @IBAction func websiteButtonPressed(_ sender: UIButton) {
         if let websiteUrl = self.website {
-            UIApplication.shared.openURL(NSURL(string: websiteUrl)! as URL)
+            UIApplication.shared.open(NSURL(string: websiteUrl)! as URL, options: [:], completionHandler: nil)
         }
     }
     
@@ -231,7 +216,7 @@ class RestaurantViewController: UIViewController, MKMapViewDelegate, CLLocationM
 }
 
 
-// MAPKIT STUFF
+// MAPKIT
 extension RestaurantViewController {
 
     func getDirections(sourceCoordinate: CLLocationCoordinate2D, destinationCoordinate: CLLocationCoordinate2D) {

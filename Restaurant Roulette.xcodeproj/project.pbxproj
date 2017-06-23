@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FBC0493D1ED6470000817CA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC0493C1ED6470000817CA8 /* AppDelegate.swift */; };
-		FBC0493F1ED6470000817CA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC0493E1ED6470000817CA8 /* LoginViewController.swift */; };
 		FBC049421ED6470000817CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC049401ED6470000817CA8 /* Main.storyboard */; };
 		FBC049451ED6470000817CA8 /* Restaurant_Roulette.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBC049431ED6470000817CA8 /* Restaurant_Roulette.xcdatamodeld */; };
 		FBC049471ED6470000817CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC049461ED6470000817CA8 /* Assets.xcassets */; };
@@ -22,14 +21,12 @@
 		FBF0994C1ED6C9A9001BF196 /* restaurant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBF0994B1ED6C9A9001BF196 /* restaurant.jpg */; };
 		FBF099501ED6D03E001BF196 /* forks1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBF0994F1ED6D03E001BF196 /* forks1.jpg */; };
 		FBF099521ED6D13E001BF196 /* PastPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF099511ED6D13E001BF196 /* PastPlacesViewController.swift */; };
-		FBF099541ED6D16C001BF196 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF099531ED6D16C001BF196 /* FriendsViewController.swift */; };
 		FBF099561ED6D883001BF196 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF099551ED6D883001BF196 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FBC049391ED6470000817CA8 /* Restaurant Roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restaurant Roulette.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC0493C1ED6470000817CA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Restaurant Roulette/AppDelegate.swift"; sourceTree = "<group>"; };
-		FBC0493E1ED6470000817CA8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "Restaurant Roulette/LoginViewController.swift"; sourceTree = "<group>"; };
 		FBC049411ED6470000817CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBC049441ED6470000817CA8 /* Restaurant_Roulette.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Restaurant_Roulette.xcdatamodel; sourceTree = "<group>"; };
 		FBC049461ED6470000817CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,7 +41,6 @@
 		FBF0994B1ED6C9A9001BF196 /* restaurant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = restaurant.jpg; path = ../../../../../Downloads/restaurant.jpg; sourceTree = "<group>"; };
 		FBF0994F1ED6D03E001BF196 /* forks1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = forks1.jpg; path = ../../../../../Downloads/forks1.jpg; sourceTree = "<group>"; };
 		FBF099511ED6D13E001BF196 /* PastPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastPlacesViewController.swift; sourceTree = "<group>"; };
-		FBF099531ED6D16C001BF196 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		FBF099551ED6D883001BF196 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = "Restaurant Roulette/UserModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,11 +92,9 @@
 		FBF099461ED6916C001BF196 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FBF099531ED6D16C001BF196 /* FriendsViewController.swift */,
 				FBF099511ED6D13E001BF196 /* PastPlacesViewController.swift */,
 				FBF099441ED69024001BF196 /* MainPageViewController.swift */,
 				FBF0993E1ED65A09001BF196 /* PreferenceViewController.swift */,
-				FBC0493E1ED6470000817CA8 /* LoginViewController.swift */,
 				FBF0993A1ED64EBC001BF196 /* RegistrationViewController.swift */,
 				FBF099401ED680AB001BF196 /* RestaurantViewController.swift */,
 			);
@@ -203,9 +197,7 @@
 				FBF099451ED69024001BF196 /* MainPageViewController.swift in Sources */,
 				FBF0994A1ED691B1001BF196 /* RestaurantModel.swift in Sources */,
 				FBF0993D1ED6599D001BF196 /* PreferenceCell.swift in Sources */,
-				FBC0493F1ED6470000817CA8 /* LoginViewController.swift in Sources */,
 				FBF099411ED680AB001BF196 /* RestaurantViewController.swift in Sources */,
-				FBF099541ED6D16C001BF196 /* FriendsViewController.swift in Sources */,
 				FBC0493D1ED6470000817CA8 /* AppDelegate.swift in Sources */,
 				FBF0993F1ED65A09001BF196 /* PreferenceViewController.swift in Sources */,
 				FBF0993B1ED64EBC001BF196 /* RegistrationViewController.swift in Sources */,
